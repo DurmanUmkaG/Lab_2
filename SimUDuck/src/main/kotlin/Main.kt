@@ -1,0 +1,32 @@
+fun main() {
+    val mallard: Duck = MallardDuck()
+    mallard.display()
+    mallard.performQuack()
+    mallard.performFly()
+    mallard.performSwim()
+    println()
+
+    val model: Duck = ModelDuck()
+    model.display()
+    model.performQuack()
+    model.performFly()
+    model.flyBehavior = FlyRocketPowered()
+    model.performFly()
+    model.performSwim()
+    println()
+
+    val wooden: Duck = WoodenDuck()
+    wooden.display()
+    wooden.performQuack()
+    wooden.performFly()
+    wooden.performSwim()
+    wooden.quackBehavior = DuckCall()
+    wooden.performQuack()
+    println()
+
+    val roast: Duck = RoastDuck()
+    roast.display()
+    roast.performQuack()
+    roast.performFly()
+    roast.performSwim()
+}
